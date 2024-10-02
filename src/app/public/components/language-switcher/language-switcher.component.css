@@ -1,0 +1,10 @@
+.language-toggle-group {
+  margin-left: 800px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .language-toggle-group {
+    margin-left: 60px; /* Remove left margin on smaller screens */
+    margin-right: 10px; /* Add right margin for spacing */
+  }
+}
