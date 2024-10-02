@@ -1,27 +1,31 @@
-# Repasopc1
+# Nobel Data Explorer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+## Project Overview
 
-## Development server
+**Nobel Data Explorer** is a web application developed as part of a project led by researcher Alex Johansson. The goal of this platform is to provide easy access to historical and current information about Nobel Prize winners (laureates) in various categories such as Peace, Physics, Chemistry, Medicine, Literature, and Economics.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The application consumes data from an open API that provides detailed information about laureates, including their name, country of origin, category, and the year they were awarded.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Toolbar**: Displays a title "Nobel Data Explorer" at the top of the home page.
+- **List of Laureates**: Below the toolbar, the application presents a list of laureates in the form of cards. Each card contains the following information:
+  - ID
+  - First Name
+  - Surname
+  - Date of Birth
+  - Gender
+  - Number of Prizes
+- **Footer**: The footer at the bottom of the laureate list contains two lines of text:
+  - "Copyright © 2024 Nobel Data Explorer. All rights reserved."
+  - "Developed by" followed by your name and developer code.
+- **Internationalization (i18n)**: The application supports two languages, English (default) and Spanish. Translatable content includes card labels, footer text, and toolbar text.
 
-## Build
+## Using the Nobel Prize API
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This web application retrieves laureate data from the **Nobel Prize API**. The API endpoint used to obtain laureate information is as follows:
 
-## Running unit tests
+### API Endpoint
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```http
+http://api.nobelprize.org/v1/laureate.json?bornDate=1900
