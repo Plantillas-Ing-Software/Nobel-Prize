@@ -1,0 +1,6 @@
+{
+  "footer": {
+    "intro": "Copyright © 2024 Nobel Data Explorer, Reservados todos los derechos",
+    "author": "Desarrollado por {{ author }}"
+  }
+}
