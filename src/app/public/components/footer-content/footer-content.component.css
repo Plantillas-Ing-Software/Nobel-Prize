@@ -1,0 +1,29 @@
+.footer {
+  background-color: #34bbab; /* Light gray background */
+  padding: 20px;
+  text-align: center; /* Center text by default */
+  font-size: 14px; /* Adjust as needed */
+  color: #333; /* Dark gray text color */
+
+}
+
+.footer p {
+  margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.footer a {
+  color: #333; /* Same color as text */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.footer a:hover {
+  color: #007bff; /* Blue on hover */
+}
+
+/* Optional: Responsive design adjustment for small screens */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px; /* Smaller font size for smaller screens */
+  }
+}
