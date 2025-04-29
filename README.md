@@ -29,3 +29,4 @@ This web application retrieves laureate data from the **Nobel Prize API**. The A
 
 ```http
 http://api.nobelprize.org/v1/laureate.json?bornDate=1900
+```
